@@ -1,0 +1,246 @@
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    background-color: #f4f6f3;
+}
+
+header *,
+.account-count {
+    color: #2a3c46;
+}
+
+header .header-icon {
+    height: 1.5rem;
+}
+
+.content-wrapper {
+    height: 100%;
+    overflow: auto;
+}
+
+.content {
+    height: calc(100% - 9rem);
+    min-height: 600px;
+}
+
+.card {
+    overflow: hidden;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(34, 55, 98, .2);
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 3px solid rgba(0, 0, 0, .05);
+}
+
+.card-header .header-icon {
+    width: 1.5rem;
+    position: relative;
+}
+
+.card-header .header-icon__card::before, 
+.card-header .header-icon__card::after {
+    content: '';
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+
+.card-header .header-icon__card::before {
+    height: 1rem;
+    border-radius: .2rem;
+    background-color: #6a869b;
+} 
+
+.card-header .header-icon__card::after {
+    height: .2rem;
+    margin-top: -.15rem;
+    background-color: #fff;
+}
+
+.card-header .header-icon__doc {
+    width: 1.2rem;
+    height: 1.5rem;
+    background-color: #6a869b;
+    border-radius: .2rem;
+}
+
+.card-header .header-icon__doc .helper {
+    height: 2px;
+    position: relative;
+    width: .8rem;
+}
+
+.card-header .header-icon__doc .helper,
+.card-header .header-icon__doc .helper::before,
+.card-header .header-icon__doc .helper::after {
+    background-color: #fff;
+}
+
+.card-header .header-icon__doc .helper::before,
+.card-header .header-icon__doc .helper::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.card-header .header-icon__doc .helper::before {
+    bottom: .4rem;
+}
+
+.card-header .header-icon__doc .helper::after {
+    top: .4rem;
+}
+
+.card-header .header-text {
+    color: #6a869b;
+}
+
+.btn {
+    border-radius: .6rem;
+}
+
+.btn.btn-transparent {
+    color: #1c7fc3;
+}
+
+.btn.btn-transparent:focus {
+    box-shadow: none;
+}
+
+.right-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.right-arrow::before,
+.right-arrow::after {
+    content: '';
+    height: 2px;
+    width: 40%;
+    position: absolute;
+    border-radius: .3rem;
+}
+
+.btn.btn-transparent .right-arrow::before,
+.btn.btn-transparent .right-arrow::after {
+    background-color: #1c7fc3;
+    width: 30%;
+}
+
+.account-arrow .right-arrow::before,
+.account-arrow .right-arrow::after {
+    background-color: #8a9398;
+}
+
+.right-arrow::before {
+    transform-origin: right top;
+    transform: rotate(-45deg);
+}
+
+.right-arrow::after {
+    transform-origin: right bottom;
+    transform: rotate(45deg);
+}
+
+.btn.btn-atf {
+    background-color: #fd6003;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(253, 96, 3, .7);
+}
+
+.btn.btn-atf:hover {
+    background-color: #ed5003;
+}
+
+.btn-atf-plus {
+    position: relative;
+    padding-left: 2em;
+}
+
+.btn-atf-plus::before {
+    content: '+';
+    font-size: 1.5em;
+    position: absolute;
+    left: .5em;
+    top: 0;
+    bottom: 0;
+}
+
+.empty-icon {
+    height: 8rem;
+    margin-bottom: 3rem;
+}
+
+.balance-body {
+    height: calc(100% - 4.2rem);
+}
+
+.balance-icon {
+    width: 1.5rem;
+}
+
+.total-balance {
+    background-color: #edf5f8;
+}
+
+.balance-text,
+.balance-postfix {
+    color: #1c7fc3;
+}
+
+.balance-text {
+    font-size: 2em;
+}
+
+.balance-postfix {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    align-self: flex-end;
+}
+
+.balance-label {
+    color: #5d6a73;
+}
+
+.account {
+    cursor: pointer;
+}
+
+.account:hover {
+    background-color: #f6f8f9;
+}
+
+.account-list .account,
+.account-list.list-group-flush:last-child .account:last-child {
+    border-top: 0;
+    border-bottom: 3px solid rgba(0, 0, 0, .05);
+}
+
+.account:first-child {
+    border-top: 3px solid rgba(0, 0, 0, .05);
+}
+
+.account-label {
+    color: #5d6a73;
+}
+
+.account-id,
+.account-balance-text,
+.empty-text {
+    color: #8a9398;
+}
+
+.account-count {
+    font-size: 1.5em;
+}
