@@ -11,7 +11,7 @@ const BalanceContainer = ({ accounts, total_balance, showAlert }) => (
     <div className="card-header d-flex align-items-center px-5 py-3">
       <div className="header-icon header-icon__card d-flex justify-content-center align-items-center flex-shrink-1"></div>
       <p className="header-text flex-grow-1 m-0 px-3">Счета</p>
-      <button className="btn btn-transparent d-flex flex-shrink-1 px-0">
+      <button className="btn btn-transparent d-flex flex-shrink-1 px-0" onClick={ showAlert }>
         Все счета
         <span className="right-arrow"></span>
       </button>
